@@ -108,8 +108,7 @@ async function seedDatabase() {
   const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
   const thirtyDaysFromNow = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
 
-  const statuses = Object.values(TaskStatus);
-  const priorities = Object.values(TaskPriority);
+  
   const categories = Object.values(TaskCategory);
 
   const tasks: any[] = [];

@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { Task, TaskStatus } from '@/types';
+import { Task} from '@/types';
 import { isOverdue, isDueSoon, formatDate } from '@/utils';
 import { Calendar, Clock, ArrowRight, Trash2, Copy } from 'lucide-react';
-import { PRIORITY_COLORS, CATEGORY_COLORS } from '@/constants';
+import {  CATEGORY_COLORS } from '@/constants';
 import { useNavigate } from 'react-router-dom';
 
 interface TaskCardProps {
@@ -20,7 +20,7 @@ export function TaskCard({ task, onDelete, onDuplicate, onSelect, selected }: Ta
   const navigate = useNavigate();
   const overdue = isOverdue(task.dueDate, task.status);
   const dueSoon = isDueSoon(task.dueDate, task.status);
-  const priorityColor = PRIORITY_COLORS[task.priority];
+ 
 
   return (
     <motion.div

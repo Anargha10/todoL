@@ -1,8 +1,8 @@
 import { forwardRef } from 'react';
 import { cn } from '@/utils';
-import { motion } from 'framer-motion';
+import { motion, HTMLMotionProps } from 'framer-motion';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends HTMLMotionProps<'input'> {
   label?: string;
   error?: string;
   leftIcon?: React.ReactNode;

@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient, UseQueryResult } from '@tanstack/react-query';
 import { taskApi } from '../api/tasks';
-import { Task, TaskInput, TaskUpdate, TasksResponse, TaskFilters } from '../types';
+import {  TaskInput, TaskUpdate, TasksResponse, TaskFilters } from '../types';
 import { useToast } from '../context/ThemeContext';
 
 const TASKS_QUERY_KEY = 'tasks';

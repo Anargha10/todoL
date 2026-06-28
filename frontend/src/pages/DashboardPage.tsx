@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckSquare, Clock, AlertTriangle, TrendingUp, Zap, Activity } from 'lucide-react';
+import { CheckSquare, Clock, AlertTriangle, TrendingUp } from 'lucide-react';
 import { StatCard } from '../components/dashboard/StatCard';
 import { PriorityChart } from '../components/dashboard/PriorityChart';
 import { StatusChart } from '../components/dashboard/StatusChart';

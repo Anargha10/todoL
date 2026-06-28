@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { Checkbox } from '../common/Checkbox';
-import { Task, TaskStatus } from '@/types';
+
+import { Task,  } from '@/types';
 import { isOverdue, formatDate } from '@/utils';
-import { Calendar, Clock, ArrowRight, Trash2, Copy, Check } from 'lucide-react';
+import { Calendar, ArrowRight, Trash2, Copy,  } from 'lucide-react';
 import { CATEGORY_COLORS } from '@/constants';
 import { useNavigate } from 'react-router-dom';
 

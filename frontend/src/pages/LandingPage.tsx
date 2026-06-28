@@ -58,7 +58,7 @@ export function LandingPage() {
             { icon: Zap, title: 'Lightning Fast', desc: 'Optimistic UI updates with instant feedback and background sync.' },
             { icon: BarChart3, title: 'Rich Analytics', desc: 'Visual dashboards with priority charts, status breakdowns, and activity feeds.' },
             { icon: Shield, title: 'Production Ready', desc: 'Built with TypeScript, tested patterns, and scalable architecture.' },
-          ].map((feature, i) => (
+          ].map((feature) => (
             <div
               key={feature.title}
               className="rounded-2xl border border-slate-200/60 bg-white/80 p-6 backdrop-blur-xl dark:border-slate-700/50 dark:bg-slate-900/80"

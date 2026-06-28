@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, Clock, Edit2, Trash2, Copy, Check } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Edit2, Trash2, Check } from 'lucide-react';
 import { Button } from '../components/common/Button';
 import { Badge } from '../components/common/Badge';
 import { Card } from '../components/common/Card';
@@ -12,7 +12,7 @@ import { Dialog } from '../components/common/Dialog';
 import { useTask } from '../hooks/useTasks';
 import { useToast } from '../hooks/useTheme';
 import { useTasks } from '../hooks/useTasks';
-import { TaskStatus, TaskUpdate } from '../types';
+import { TaskStatus } from '../types';
 import { formatDateTime, isOverdue } from '../utils';
 import { CATEGORY_COLORS } from '../constants';
 

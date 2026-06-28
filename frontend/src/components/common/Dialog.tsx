@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AlertTriangle, Info, CheckCircle, X } from 'lucide-react';
+import { AlertTriangle, Info} from 'lucide-react';
 import { cn } from '@/utils';
 
 interface DialogProps {

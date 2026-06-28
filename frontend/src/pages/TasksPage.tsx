@@ -28,7 +28,7 @@ export function TasksPage() {
   const [deleteIds, setDeleteIds] = useState<string[] | null>(null);
   const { showToast } = useToast();
 
-  const { tasks, pagination, isLoading, createTask, updateTask, deleteTask, duplicateTask, bulkDelete, bulkComplete } = useTasks(filters);
+  const { tasks, pagination, isLoading, createTask, deleteTask, duplicateTask, bulkDelete, bulkComplete } = useTasks(filters);
 
   useKeyboardShortcuts([
     { key: 'n', ctrl: true, handler: () => setIsFormOpen(true) },
